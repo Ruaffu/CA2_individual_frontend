@@ -40,10 +40,36 @@ function apiFacade() {
     return fetch(URL + "/api/cat/cat", options).then(handleHttpErrors);
   }
 
+  const fetchBook = () => {
+    const options = makeOptions("GET", true); //True add's the token
+    return fetch(URL + "/api/book/all", options).then(handleHttpErrors);
+  }
+
+  const fetchBookImage = (isbn) => {
+    const options = makeOptions("GET", true); //True add's the token
+    let newUrl = 'https://covers.openlibrary.org/b/isbn/'+isbn+'-M.jpg'
+    console.log(newUrl);
+    return fetch(newUrl, options).then(handleHttpErrors);
+  }
+
+  const fetchActivity = () => {
+    const options = makeOptions("GET", true); //True add's the token
+    
+    return fetch(URL + "/api/random/bored", options).then(handleHttpErrors);
+  }
+
   const create = (username, password) => {
     const options = makeOptions("POST", true, { userName: username, userPass: password }); //True add's the token
     console.log(username + " " + password);
     return fetch(URL + "/api/info/newuser", options)
+      .then(handleHttpErrors)
+      .then(res => { setToken(res.token) })
+  }
+
+  const createBook = (book) => {
+    const options = makeOptions("POST", true, book); //True add's the token
+    console.log(username + " " + password);
+    return fetch(URL + "/api/book/newbook", options)
       .then(handleHttpErrors)
       .then(res => { setToken(res.token) })
   }
@@ -74,6 +100,10 @@ function apiFacade() {
     fetchUserInfo,
     fetchCat,
     create,
+    fetchBook,
+    fetchActivity,
+    createBook,
+    fetchBookImage,
   }
 }
 const facade = apiFacade();

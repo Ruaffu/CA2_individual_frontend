@@ -18,7 +18,9 @@ export default function App() {
       <header>
         <nav>
           <NavLink className="nav-link" to="/">Home</NavLink>
-          <NavLink className="nav-link" to="cat">Generate</NavLink>
+          <NavLink className="nav-link" to="cat">Cat Fact</NavLink>
+          <NavLink className="nav-link" to="book">Books</NavLink>
+          <NavLink className="nav-link" to="bored">Bored?</NavLink>
 
 
           {

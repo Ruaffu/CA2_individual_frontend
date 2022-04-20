@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import NoMatch from "./components/NoMatch";
 import LoginPage from "./components/LoginPage";
 import Cat from "./components/Cat";
+import Books from "./components/Books";
 
 const rootElement = document.getElementById("root");
 render(
@@ -15,6 +16,7 @@ render(
         </Route>
         <Route path="login" element={<LoginPage/>} />
         <Route path="cat" element={<Cat/>} />
+        <Route path="book" element={<Books/>} />
         <Route path="*" element={<NoMatch/>} />
     
       </Route>
