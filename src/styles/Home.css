@@ -9,7 +9,7 @@
 
 .image-container {
     position: relative;
-    text-align: left;
+    text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     width: 100%;
@@ -28,9 +28,9 @@
 @media screen and (min-width: 501px){ 
     .centered {
       position: absolute;
-      top: 27%;
-      left: 30%;
+      top: 25%;
+      left: 50%;
       transform: translate(-50%, -50%);
-      font-size: 60px;
+      font-size: 50px;
     }
   }

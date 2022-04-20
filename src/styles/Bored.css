@@ -1,0 +1,46 @@
+.section-bored {
+    /* background: rgb(2,0,36); */
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(143,78,182,1) 33%, rgba(0,212,255,1) 100%); */
+ padding-bottom: 200px;
+  width: auto;
+  border-width: 20px;
+  border-style: solid;
+  border-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(143,78,182,1) 33%, rgba(0,212,255,1) 100%) 1;
+  padding: 50px;
+  margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bored-fact-section button, .section button{
+    background: rgb(44, 41, 96);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(129,78,182,1) 33%, rgba(35,80,189,1) 59%, rgba(0,212,255,1) 100%);
+    border-radius: 20px;
+    font-weight: bold;
+    color: azure;
+  }
+
+  @media screen and (min-width: 501px){
+    .bored-fact-section h2, .section h2{
+      font-size: 35px;
+      padding-top: 30px;
+      
+      
+    }
+    
+    .bored-fact-section h3, .section h3{
+      font-size: 22px;
+      padding-bottom: 60px;
+    }
+  
+    .section {
+      padding: 50px;
+      padding-bottom: 80px;
+      
+    }
+  
+    .section button{
+      margin-left: 25%;
+      width: 50%;
+      margin-right: 25%;
+    }
+}

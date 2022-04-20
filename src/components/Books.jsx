@@ -5,34 +5,49 @@ import "../styles/Books.css";
 
 export default function Books() {
     const [books, setBooks] = useState([]);
-    const [image, setImage] = useState('');
 
 
     function getBooks() {
         facade.fetchBook().then(data => setBooks(data));
-    }    
+    
+    } 
+    
+    const getToken = () => {
+        return localStorage.getItem('jwtToken')
+      }
+      const loggedIn = () => {
+        const loggedIn = getToken() != null;
+        return loggedIn;
+      }
 
     useEffect(() => {
         getBooks()
         
     },[])
-
-  console.log(image);
-    
-    console.log(books);
         
 
   return (
     <div >
-        <h1 className="center">Books</h1>
+        <h1 className="center-text">Books</h1>
+        {loggedIn() != false ?
+
+     <> 
      {books.map(book => (
-         <div className='section'>
+         <div className='section-books'>
              <img className='center' src={'https://covers.openlibrary.org/b/isbn/'+book.isbn+'-M.jpg'} />
-            <h3 className='center'>{book.title}</h3>
-            <h3 className='center'>{book.isbn}</h3>
+            <h2 className='center-text'>{book.title}</h2>
+            <h4 className='center-text'>{book.isbn}</h4>
+            <p className="center-text">{book.description}</p>
             </div>
-  
      ))}
+     </>
+
+     :<>
+     <h3 className="center-text">Please Login</h3>
+     <NavLink className="navlink" to="/login">Login</NavLink>
+     </>
+}
+
     </div>
   );
 }

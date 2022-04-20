@@ -1,5 +1,7 @@
 import React from 'react'
-import cat from "../img/cat.jpg";
+import laugh from "../img/laugh.png";
+import laugh2 from "../img/laugh2.png";
+import ghost from "../img/Ghost-in-the-Shell-Movie-Logo_large.jpg";
 import "../styles/Home.css";
 const Home = () => {
   return (
@@ -7,16 +9,16 @@ const Home = () => {
       <div className='row'>
         <div className='column'>
           <div className='image-container'>
-            <img style={{ width: "100%" }} src={cat} />
+            <img style={{ width: "100%" }} src={laugh2} />
             <div className='centered'>
-              <h2>Cat facts!</h2>
+              <h2>Cats Books And Activities</h2>
             </div>
           </div>
           <div className='home-section'>
             <h2>
-              blabakabal
+              Welcome
             </h2>
-            <h3>dshfoidhfhdsoihfodhsfodusfh</h3>
+            <h3>To do</h3>
           </div>
         </div>
       </div>
