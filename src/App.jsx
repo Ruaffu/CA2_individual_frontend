@@ -1,18 +1,20 @@
 import { Outlet, Link, NavLink } from "react-router-dom";
+import { useState, useEffect } from "react";
 import "./styles/App.css";
 import apiFacade from "./apiFacade.js";
 export default function App() {
+
 
 
   function logout() {
     apiFacade.logout();
   }
 
-  /* const  getUsername = () => {
-    const data = apiFacade.fetchUserInfo().then(data => data);
-    return data.userName;
-  }
- */
+  //  const  getUsername = () => {
+  //   const data = apiFacade.fetchUserInfo().then(data => data);
+  //   return data.userName
+  // }
+ 
   return (
     <div>
       <header>
@@ -26,7 +28,6 @@ export default function App() {
           {
             apiFacade.loggedIn() ?
               <>
-               {/*  <NavLink className="nav-button" to="/">{getUsername}</NavLink> */}
                 <NavLink className="nav-button" to="/" onClick={logout}>Logout</NavLink>
               </>
 

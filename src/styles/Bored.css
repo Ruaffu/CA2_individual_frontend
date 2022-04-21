@@ -9,6 +9,7 @@
   padding: 50px;
   margin-left: auto;
     margin-right: auto;
+    
   }
 
   .bored-fact-section button, .section button{
@@ -17,14 +18,14 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(129,78,182,1) 33%, r
     border-radius: 20px;
     font-weight: bold;
     color: azure;
+    
   }
 
   @media screen and (min-width: 501px){
     .bored-fact-section h2, .section h2{
       font-size: 35px;
       padding-top: 30px;
-      
-      
+
     }
     
     .bored-fact-section h3, .section h3{

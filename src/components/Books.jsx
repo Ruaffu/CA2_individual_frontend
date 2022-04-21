@@ -20,6 +20,7 @@ export default function Books() {
         return loggedIn;
       }
 
+
     useEffect(() => {
         getBooks()
         
@@ -28,23 +29,23 @@ export default function Books() {
 
   return (
     <div >
-        <h1 className="center-text">Books</h1>
+        <h1 className="center-text book-text">Books</h1>
         {loggedIn() != false ?
 
-     <> 
+     <div className='card-list'> 
      {books.map(book => (
-         <div className='section-books'>
+         <div className='card-container' key={book.title}>
              <img className='center' src={'https://covers.openlibrary.org/b/isbn/'+book.isbn+'-M.jpg'} />
             <h2 className='center-text'>{book.title}</h2>
             <h4 className='center-text'>{book.isbn}</h4>
             <p className="center-text">{book.description}</p>
             </div>
      ))}
-     </>
+     </div>
 
      :<>
-     <h3 className="center-text">Please Login</h3>
-     <NavLink className="navlink" to="/login">Login</NavLink>
+     <h3 className="center-text book-text">Please Login</h3>
+     <NavLink className="navlink book-text" to="/login">Login</NavLink>
      </>
 }
 
