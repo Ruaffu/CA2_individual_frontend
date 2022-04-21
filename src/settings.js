@@ -1,3 +1,3 @@
-const URL = "http://localhost:8080/ca2_startcode_backend_war_exploded"
+const URL = "https://ruaffu.com/ca2-backend"
 
 export default URL;

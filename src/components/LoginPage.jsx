@@ -68,6 +68,7 @@ function LoggedIn() {
     facade.fetchUserInfo().then(data => setDataFromServer(data));
   }, [])
 
+
   return (
     <div>
       <h2>Data Received from server</h2>
@@ -77,8 +78,8 @@ function LoggedIn() {
 
 }
 
-function LoginPage() {
-  const [loggedIn, setLoggedIn] = useState(false);
+function LoginPage( { loggedIn, setLoggedIn }) {
+
   const [creatingUser, setCreatingUser] = useState(false);
 
   const logout = () => {

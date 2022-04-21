@@ -22,6 +22,25 @@
     font-size: 40px;
 }
 
+.form-box{
+  font-size: 25px;
+  font-weight: bold;
+  color: aliceblue;
+        width: 800px;
+        position: relative; left: 50%; margin-left: -400px; 
+        padding: auto;          
+}
+
+.button-text{
+  background: rgb(44, 41, 96);
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(129,78,182,1) 33%, rgba(35,80,189,1) 59%, rgba(0,212,255,1) 100%);
+  color: aliceblue;
+  border-radius: 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
 
   .section-books {
     /* background: rgb(2,0,36); */
@@ -80,7 +99,7 @@ body {
   width: 95vw;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
 }
 

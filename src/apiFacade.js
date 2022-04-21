@@ -68,7 +68,7 @@ function apiFacade() {
 
   const createBook = (book) => {
     const options = makeOptions("POST", true, book); //True add's the token
-    console.log(username + " " + password);
+    console.log(book);
     return fetch(URL + "/api/book/newbook", options)
       .then(handleHttpErrors)
       .then(res => { setToken(res.token) })
