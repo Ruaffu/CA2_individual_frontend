@@ -19,9 +19,11 @@
 .home-text{
     color: aliceblue;
     font-size: 40px;
+    text-align: center;
 }
 
 .home-text-small  {
+    text-align: center;
     color: aliceblue;
     font-size: 25px;
 }

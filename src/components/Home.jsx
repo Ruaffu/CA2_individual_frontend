@@ -4,6 +4,7 @@ import laugh2 from "../img/laugh2.png";
 import laugh3 from "../img/laugh3.png";
 import ghost from "../img/Ghost-in-the-Shell-Movie-Logo_large.jpg";
 import "../styles/Home.css";
+import Footer from './Footer';
 const Home = () => {
   return (
     <main>
@@ -17,9 +18,10 @@ const Home = () => {
           </div>
           <div >
             <h2 className='home-text'>
-              Welcome
+              Welcome to the jungle
             </h2>
-            <h3 className='home-text-small'>To do</h3>
+            <p className='home-text-small'>Enjoy!!</p>
+          <Footer/>
           </div>
         </div>
       </div>
