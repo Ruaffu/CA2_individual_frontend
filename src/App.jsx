@@ -24,7 +24,7 @@ export default function App() {
   
     return (
       <div>
-        <h3 >Hello @{dataFromServer.userName}</h3>
+        <h3 >Hello {dataFromServer.userName}</h3>
       </div>
     )
   }
