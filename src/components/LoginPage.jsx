@@ -18,7 +18,7 @@ function LogIn({ login, creatingUser}) {
 
     <div className="smaller-container">
       <div className="login-section">
-        <h2>Log in</h2>
+        <h2 className="login-text">Log in</h2>
         <form onChange={onChange} >
           <input type="text" placeholder="User Name" id="username" />
           <input type="password" placeholder="Password" id="password" />

@@ -8,6 +8,10 @@
   .cat-fact-section{
     padding: 30px;
   }
+
+  .cat-text{
+    color: aliceblue;
+  }
   
   .section {
     padding: 100px;
@@ -24,14 +28,19 @@
   }
   
   .cat-fact-section button, .section button{
-    background-color: rgb(255, 213, 0);
+    background: rgb(44, 41, 96);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(129,78,182,1) 33%, rgba(35,80,189,1) 59%, rgba(0,212,255,1) 100%);
     border-radius: 20px;
     font-weight: bold;
+    color: azure;
+    
+    font-size: 25px;
+  font-weight: bold;
   }
   
   .cat-fact-section button:hover, .section button:hover {
     background-color: rgb(0, 0, 0);
-    color: white;
+    color: rgb(101, 70, 242);
   }
 
   @media screen and (min-width: 501px){

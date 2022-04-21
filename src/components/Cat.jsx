@@ -21,16 +21,16 @@ const Cat = () => {
                             </div>
                             <div className='column'>
                                 <div className='cat-fact-section'>
-                                    <h2>Did you know..?</h2>
-                                    <h3>{cat.fact}</h3>
+                                    <h2 className='cat-text'>Did you know..?</h2>
+                                    <h3 className='cat-text'>{cat.fact}</h3>
                                     <button onClick={getCat}>Generate</button>
                                 </div>
                             </div>
                         </> : <>
                             <div className='column'>
                                 <div className='section'>
-                                    <h2 className='center'>Get cat facts here!</h2>
-                                    <h3 className='center'>Click here to get a random cat fact!</h3>
+                                    <h2 className='center cat-text'>Get cat facts here!</h2>
+                                    <h3 className='center cat-text'>Click here to get a random cat fact!</h3>
                                     <button onClick={getCat}>Generate</button>
                                 </div>
                             </div>

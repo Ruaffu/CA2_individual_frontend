@@ -1,6 +1,5 @@
 .section-bored {
-    /* background: rgb(2,0,36); */
-    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(143,78,182,1) 33%, rgba(0,212,255,1) 100%); */
+
  padding-bottom: 200px;
   width: auto;
   border-width: 20px;
@@ -12,13 +11,21 @@
     
   }
 
+
   .bored-fact-section button, .section button{
     background: rgb(44, 41, 96);
 background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(129,78,182,1) 33%, rgba(35,80,189,1) 59%, rgba(0,212,255,1) 100%);
     border-radius: 20px;
     font-weight: bold;
     color: azure;
+    font-size: 25px;
+  font-weight: bold;
     
+  }
+
+  .bored-fact-section button:hover, .section button:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(101, 70, 242);
   }
 
   @media screen and (min-width: 501px){
@@ -43,5 +50,10 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(129,78,182,1) 33%, r
       margin-left: 25%;
       width: 50%;
       margin-right: 25%;
+      
+    }
+
+    .bored-text{
+      color: aliceblue;
     }
 }

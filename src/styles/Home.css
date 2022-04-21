@@ -9,6 +9,7 @@
 
 .image-container {
     position: relative;
+    padding-top: 10px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
@@ -25,7 +26,13 @@
 .home-text-small  {
     text-align: center;
     color: aliceblue;
-    font-size: 25px;
+    font-size: 20px;
+    padding: 10px;
+    width: 600px;
+    height: auto;
+    
+    
+    
 }
 
 .centered {
