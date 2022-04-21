@@ -115,7 +115,7 @@ export default function AddBooks({ loggedIn}) {
      
      </>
      :<>
-     {alert('Please login as Admin')}
+     <h3 className="center-text book-text">Please Login as Admin</h3>
      <NavLink className="navlink book-text" to="/login">Login</NavLink>
      </>
 }
